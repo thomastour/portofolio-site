@@ -309,12 +309,23 @@ li a:hover {
     color: white;
 }
 
+.dark-mode .cv > a {
+  color: #47b4fd;
+  font-size: large; 
+  padding: 5px;
+  border-radius: 50px;
+  border: 1px solid #47b4fd;
+  text-decoration: none;
+}
+
+
 .dark-mode .email {
   color: #bbb; 
 }
 
+
 .dark-mode .email:hover {
-  color: #fff; 
+  color: #ffffff; 
 }
 
 /* Bright Mode */
@@ -327,6 +338,14 @@ li a:hover {
     color: #0c0f20
 }
 
+.bright-mode .cv > a {
+  color: #292b8a; 
+  font-size: large;
+  padding: 5px;
+  border-radius: 50px;
+  border: 1px solid #292b8a;
+  text-decoration: none;
+}
 
 .bright-mode .email {
   color: #4067d1;
