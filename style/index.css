@@ -21,6 +21,7 @@ html {
 header, footer {
     width: 100%;
     text-align: center;
+    
 }
 
 
@@ -35,7 +36,7 @@ header, footer {
 
 .header__logo p {
     font-size: 2rem;
-    color: black;
+    color: #333;;
 }
 
 /* Navigation styling */
@@ -54,10 +55,28 @@ nav ul li a {
     font-size: 1.2rem;
     color: #333;
     font-weight: bold;
+    position: relative; 
 }
 
 nav ul li a:hover {
     color: #536DFF; 
+}
+
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #536DFF;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
 }
 
 
@@ -296,7 +315,7 @@ nav ul li a:hover {
 
     .about__text {
         line-height: 1.688rem;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         padding: 0px;
     }
 
