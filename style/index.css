@@ -117,6 +117,7 @@ nav ul li a:hover {
     padding: 20px;
     margin: 40px;
     text-align: left;
+    line-height: 2.5rem;
     font-size: 1.5rem;
 }
 
@@ -184,6 +185,7 @@ nav ul li a:hover {
 
 @media (max-width: 930px) {
     body {
+       
         font-size: 15px;
     }
 
@@ -206,6 +208,7 @@ nav ul li a:hover {
     }
 
     .about__text {
+        line-height: 2.2rem;
         font-size: 1.2rem;
         padding: 10px;
     }
@@ -221,6 +224,7 @@ nav ul li a:hover {
 
 
 @media (min-width: 742px) and (max-width: 930px) {
+
 
     nav ul li a {
         font-size: 1rem;
@@ -246,6 +250,7 @@ nav ul li a:hover {
 
 
     .about__text {
+        line-height: 2rem;
         font-size: 1.2rem;
         padding: 10px;
     }
@@ -261,9 +266,13 @@ nav ul li a:hover {
 
 
 @media (max-width: 741px) {
+
+    .header__logo > p{
+        font-size: 1.7rem;
+    }
    
     nav ul li a {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .main__title {
@@ -286,12 +295,13 @@ nav ul li a:hover {
 
 
     .about__text {
-        font-size: 1.1rem;
+        line-height: 1.688rem;
+        font-size: 0.8rem;
         padding: 10px;
     }
 
     .github--container {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .footer__heading {
