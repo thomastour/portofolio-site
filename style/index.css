@@ -297,11 +297,11 @@ nav ul li a:hover {
     .about__text {
         line-height: 1.688rem;
         font-size: 0.8rem;
-        padding: 10px;
+        padding: 0px;
     }
 
     .github--container {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 
     .footer__heading {
