@@ -5,6 +5,7 @@
   var navLinks = Array.prototype.slice.call(
     document.querySelectorAll('.nav-list a[href^="#"]')
   );
+
   var sections = navLinks
     .map(function (link) {
       return document.querySelector(link.getAttribute("href"));
@@ -13,39 +14,49 @@
 
   function setMenuState(isOpen) {
     if (!navToggle || !siteNav || !navList) return;
+
     navToggle.classList.toggle("is-open", isOpen);
     siteNav.classList.toggle("is-open", isOpen);
-    navList.classList.toggle("is-open", isOpen);
     navToggle.setAttribute("aria-expanded", String(isOpen));
-    document.body.style.overflow = isOpen ? "hidden" : "";
+    document.body.classList.toggle("nav-open", isOpen);
+  }
+
+  function closeMenu() {
+    setMenuState(false);
+  }
+
+  function openMenu() {
+    setMenuState(true);
   }
 
   if (navToggle && siteNav && navList) {
     navToggle.addEventListener("click", function () {
-      setMenuState(!siteNav.classList.contains("is-open"));
+      if (siteNav.classList.contains("is-open")) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
     });
 
     siteNav.addEventListener("click", function (event) {
       if (event.target === siteNav) {
-        setMenuState(false);
+        closeMenu();
       }
     });
 
     navLinks.forEach(function (link) {
-      link.addEventListener("click", function () {
-        setMenuState(false);
-      });
+      link.addEventListener("click", closeMenu);
     });
 
     document.addEventListener("keydown", function (event) {
       if (event.key === "Escape") {
-        setMenuState(false);
+        closeMenu();
       }
     });
 
     window.addEventListener("resize", function () {
       if (window.innerWidth > 720) {
-        setMenuState(false);
+        closeMenu();
       }
     });
   }
@@ -60,6 +71,10 @@
         link.removeAttribute("aria-current");
       }
     });
+  }
+
+  if (sections.length > 0) {
+    setActiveLink(sections[0].id);
   }
 
   if (sections.length && "IntersectionObserver" in window) {
@@ -82,8 +97,8 @@
   var revealNodes = document.querySelectorAll(".reveal");
   if (revealNodes.length) {
     if (!("IntersectionObserver" in window)) {
-      revealNodes.forEach(function (el) {
-        el.classList.add("visible");
+      revealNodes.forEach(function (node) {
+        node.classList.add("visible");
       });
     } else {
       var revealObserver = new IntersectionObserver(
@@ -98,8 +113,8 @@
         { threshold: 0.12 }
       );
 
-      revealNodes.forEach(function (el) {
-        revealObserver.observe(el);
+      revealNodes.forEach(function (node) {
+        revealObserver.observe(node);
       });
     }
   }
