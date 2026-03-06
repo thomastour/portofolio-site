@@ -1,6 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
+﻿document.addEventListener("DOMContentLoaded", function() {
   const modeToggle = document.getElementById("mode-toggle");
   const body = document.body;
+  if (!modeToggle) return;
 
   // Check if the user's preference is already set
   if (localStorage.getItem("colorMode") === "dark") {
@@ -29,5 +30,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 });
+
 
 
