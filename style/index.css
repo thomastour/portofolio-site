@@ -36,24 +36,6 @@ body {
     margin: 0 auto;
 }
 
-.skip-link {
-    position: absolute;
-    top: -40px;
-    left: 12px;
-    z-index: 999;
-    background: #fff;
-    color: #000;
-    border: 2px solid var(--accent);
-    border-radius: 8px;
-    padding: 0.45rem 0.7rem;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.skip-link:focus {
-    top: 10px;
-}
-
 .site-header {
     position: sticky;
     top: 0;
@@ -444,6 +426,7 @@ button:focus-visible {
         padding: 2.5rem 0;
     }
 }
+
 
 
 
