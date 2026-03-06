@@ -1,3 +1,4 @@
+
 body {
     
     background-color: #0c0f20;
@@ -152,7 +153,8 @@ li a:hover {
 
 /* footer */
 
-.copyright {
+.footer-container {
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,11 +164,12 @@ li a:hover {
   font-size: 12px;
   margin-top: 100px;
   padding: 5px;
+ 
 }
 
+
+
 /* about page */
-
-
 .about-container {
   display: flex;
   flex-direction: column;
@@ -182,7 +185,7 @@ li a:hover {
   margin: 70px;
   padding: 20px 30px;
   max-width: 800px;
-  background-color: #ece7dd;
+  /* background-color: #ece7dd; */
   border-radius: 30px;
   color: #121213;
   margin: 0 auto;
@@ -307,12 +310,24 @@ li a:hover {
     color: white;
 }
 
+
+.dark-mode .cv > a {
+  color: #47b4fd;
+  font-size: large; 
+  padding: 5px;
+  border-radius: 50px;
+  border: 1px solid #47b4fd;
+  text-decoration: none;
+}
+
+
 .dark-mode .email {
   color: #bbb; 
 }
 
+
 .dark-mode .email:hover {
-  color: #fff; 
+  color: #ffffff; 
 }
 
 /* Bright Mode */
@@ -325,6 +340,14 @@ li a:hover {
     color: #0c0f20
 }
 
+.bright-mode .cv > a {
+  color: #292b8a; 
+  font-size: large;
+  padding: 5px;
+  border-radius: 50px;
+  border: 1px solid #292b8a;
+  text-decoration: none;
+}
 
 .bright-mode .email {
   color: #4067d1;
@@ -341,7 +364,7 @@ li a:hover {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.932);
 }
 
-.bright-mode #name, #email, #subject {
+.bright-mode #name, #email, #subject{
   background-color: rgb(248, 246, 246);
   border: 1px solid #2f46c9;;
 }
@@ -466,8 +489,6 @@ li a:hover {
     padding: 10px;
     
   }
-
-
 
 
 }
