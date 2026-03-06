@@ -11,11 +11,18 @@
     <title>Thomas Tourlidas | Full-Stack Developer</title>
 </head>
 <body>
-    <header class="site-header">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header" id="top">
         <div class="container header-row">
             <a class="brand" href="#top">Thomas Tourlidas</a>
-            <nav>
-                <ul class="nav-list">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav" aria-label="Primary">
+                <ul class="nav-list" id="primary-nav">
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
@@ -26,12 +33,12 @@
         </div>
     </header>
 
-    <main id="top">
-        <section class="hero section">
+    <main id="main-content">
+        <section class="hero section" aria-labelledby="hero-title">
             <div class="container hero-grid">
                 <div>
                     <p class="eyebrow">Open to Junior Full-Stack Roles</p>
-                    <h1>Developer with technical drive and real business operations experience.</h1>
+                    <h1 id="hero-title">Developer with technical drive and real business operations experience.</h1>
                     <p class="lead">
                         I build practical web applications and combine engineering discipline with process thinking from payroll,
                         procurement, and accounting support roles.
@@ -41,7 +48,7 @@
                         <a class="btn btn-outline" href="#contact">Contact Me</a>
                     </div>
                 </div>
-                <aside class="hero-card reveal">
+                <aside class="hero-card reveal" aria-label="Profile snapshot">
                     <img src="./images/laptop.png" alt="Laptop illustration" class="hero-visual">
                     <h2>Profile Snapshot</h2>
                     <ul>
@@ -55,10 +62,10 @@
             </div>
         </section>
 
-        <section id="about" class="section">
+        <section id="about" class="section" aria-labelledby="about-title">
             <div class="container two-col">
                 <article class="card reveal">
-                    <h2>About</h2>
+                    <h2 id="about-title">About</h2>
                     <p>
                         I am an early-career full-stack developer focused on building clean, maintainable, and useful software.
                         My prior roles in administration and payroll taught me accountability, attention to detail, and clear communication.
@@ -77,37 +84,37 @@
             </div>
         </section>
 
-        <section id="experience" class="section section-alt">
+        <section id="experience" class="section section-alt" aria-labelledby="experience-title">
             <div class="container">
-                <h2>Professional Experience</h2>
+                <h2 id="experience-title">Professional Experience</h2>
                 <div class="timeline">
                     <article class="card reveal">
                         <h3>Municipality of Mesolonghi</h3>
                         <p class="meta">Procurement Department | Administrative Support | Jul 2022 - Jul 2023</p>
-                        <p>Supported procurement workflows, documentation, and cross-department coordination.</p>
+                        <p>Supported procurement workflows and documentation, while coordinating cross-department requests.</p>
                     </article>
                     <article class="card reveal">
                         <h3>Agricultural Cooperative of Agrinio</h3>
-                        <p class="meta">Accounting Department | Admin Support & Payroll | May 2021 - Nov 2021</p>
-                        <p>Handled payroll operations and daily administrative processes with EPSILON Pylon HRM.</p>
+                        <p class="meta">Accounting Department | Admin Support and Payroll | May 2021 - Nov 2021</p>
+                        <p>Handled payroll operations and daily administration in EPSILON Pylon HRM.</p>
                     </article>
                     <article class="card reveal">
                         <h3>EFKA</h3>
                         <p class="meta">Revenue Department | Administrative Support | Feb 2019 - Feb 2020</p>
-                        <p>Contributed to structured public-sector administration and revenue-process support.</p>
+                        <p>Supported revenue operations and public-sector administrative processes.</p>
                     </article>
                     <article class="card reveal">
                         <h3>Agricultural Cooperative of Agrinio</h3>
                         <p class="meta">Accounting Department | Internship | Jul 2015 - Aug 2015</p>
-                        <p>Early professional exposure to accounting operations and office systems.</p>
+                        <p>Gained early hands-on experience in accounting operations and office systems.</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="section">
+        <section id="skills" class="section" aria-labelledby="skills-title">
             <div class="container">
-                <h2>Education and Skills</h2>
+                <h2 id="skills-title">Education and Skills</h2>
                 <div class="grid-3">
                     <article class="card reveal">
                         <h3>Education</h3>
@@ -137,19 +144,19 @@
             </div>
         </section>
 
-        <section class="section section-cta">
+        <section class="section section-cta" aria-labelledby="projects-title">
             <div class="container card centered reveal">
-                <h2>Portfolio Projects</h2>
+                <h2 id="projects-title">Portfolio Projects</h2>
                 <p>I am actively building and refining projects. Visit my GitHub for current repositories and code samples.</p>
                 <a class="btn" href="https://github.com/thomastour" target="_blank" rel="noopener">Open GitHub Profile</a>
             </div>
         </section>
     </main>
 
-    <footer id="contact" class="site-footer">
+    <footer id="contact" class="site-footer" aria-labelledby="contact-title">
         <div class="container footer-grid">
             <div>
-                <h2>Contact</h2>
+                <h2 id="contact-title">Contact</h2>
                 <p>Available for junior software engineering opportunities and internships.</p>
             </div>
             <div class="contact-links">
@@ -161,9 +168,6 @@
         <p class="copyright" id="date"></p>
     </footer>
 
-    <script src="./js/portofolio.js"></script>
+    <script src="./js/portfolio.js"></script>
 </body>
 </html>
-
-
-
