@@ -13,7 +13,7 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0.35rem;
     box-sizing: border-box;
 }
 
@@ -114,7 +114,7 @@ body {
     border-radius: 10px;
     width: 44px;
     height: 38px;
-    padding: 0;
+    padding: 0.35rem;
     cursor: pointer;
 }
 
@@ -410,9 +410,7 @@ button:focus-visible {
     }
 
     .nav-toggle {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
+        display: inline-block;
         margin-left: auto;
     }
 
@@ -446,4 +444,6 @@ button:focus-visible {
         padding: 2.5rem 0;
     }
 }
+
+
 
