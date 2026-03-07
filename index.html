@@ -26,6 +26,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a class="btn btn-small" href="./CV.pdf" target="_blank" rel="noopener">CV</a></li>
                 </ul>
@@ -144,11 +145,59 @@
             </div>
         </section>
 
-        <section class="section section-cta" aria-labelledby="projects-title">
-            <div class="container card centered reveal">
-                <h2 id="projects-title">Portfolio Projects</h2>
-                <p>I am actively building and refining projects. Visit my GitHub for current repositories and code samples.</p>
-                <a class="btn" href="https://github.com/thomastour" target="_blank" rel="noopener">Open GitHub Profile</a>
+        <section id="projects" class="section section-cta" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-head reveal">
+                    <h2 id="projects-title">Featured Projects</h2>
+                    <p>Projects that show backend API work, React fundamentals, and how I approach practical software problems.</p>
+                </div>
+                <div class="projects-grid">
+                    <article class="card project-card reveal">
+                        <p class="project-label">Django + DRF</p>
+                        <h3>MoviePedia</h3>
+                        <p>A movie catalog app with authentication, CRUD flows, filtering, and REST API endpoints.</p>
+                        <ul class="tag-list">
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>REST Framework</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                        <div class="project-links">
+                            <a class="btn btn-small" href="https://github.com/thomastour/final_project_cf3" target="_blank" rel="noopener">Source</a>
+                        </div>
+                    </article>
+                    <article class="card project-card reveal">
+                        <p class="project-label">Backend API</p>
+                        <h3>Books API</h3>
+                        <p>A token-authenticated books and reviews API with ownership rules for user-created reviews.</p>
+                        <ul class="tag-list">
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>DRF</li>
+                            <li>dj-rest-auth</li>
+                        </ul>
+                        <div class="project-links">
+                            <a class="btn btn-small" href="https://github.com/thomastour/Books_app" target="_blank" rel="noopener">Source</a>
+                        </div>
+                    </article>
+                    <article class="card project-card reveal">
+                        <p class="project-label">Frontend</p>
+                        <h3>Note App React</h3>
+                        <p>A lightweight notes app focused on component structure, state updates, and simple UI interactions.</p>
+                        <ul class="tag-list">
+                            <li>React</li>
+                            <li>JavaScript</li>
+                            <li>Material UI</li>
+                        </ul>
+                        <div class="project-links">
+                            <a class="btn btn-small" href="https://github.com/thomastour/note-app-react" target="_blank" rel="noopener">Source</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="card centered reveal portfolio-footer-card">
+                    <p>I keep the rest of my experiments, smaller exercises, and ongoing cleanup work on GitHub.</p>
+                    <a class="btn" href="https://github.com/thomastour" target="_blank" rel="noopener">Open GitHub Profile</a>
+                </div>
             </div>
         </section>
     </main>
